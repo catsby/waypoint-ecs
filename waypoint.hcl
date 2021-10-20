@@ -20,7 +20,6 @@ app "web" {
 
     registry {
       use "aws-ecr" {
-        image  = "hello-world"
         region = "us-west-2"
 
         #repository = "797645259670.dkr.ecr.us-west-2.amazonaws.com/cts-waypoint-server"
