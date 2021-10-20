@@ -9,9 +9,9 @@ runner {
     ref = "refs/heads/catsby"
   }
 
-  poll {
-    enabled = true
-  }
+  # poll {
+  #   enabled = true
+  # }
 }
 
 app "web" {
