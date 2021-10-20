@@ -23,7 +23,7 @@ app "web" {
         region = "us-west-2"
 
         #repository = "797645259670.dkr.ecr.us-west-2.amazonaws.com/cts-waypoint-server"
-        repository = "cts-waypoint-server:thing"
+        repository = "cts-waypoint-server/thing"
         tag        = "latest"
       }
     }
