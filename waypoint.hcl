@@ -4,7 +4,9 @@ runner {
   enabled = true
 
   data_source "git" {
-    url = "https://github.com/nicholasjackson/waypoint-ecs"
+    url = "https://github.com/catsby/waypoint-ecs"
+
+    ref = "refs/heads/catsby"
   }
 
   poll {
@@ -18,8 +20,8 @@ app "web" {
 
     registry {
       use "aws-ecr" {
-        region     = "eu-west-1"
-        repository = "938765688536.dkr.ecr.eu-west-1.amazonaws.com/dev-development-waypoint"
+        region     = "us-west-2"
+        repository = "797645259670.dkr.ecr.us-west-2.amazonaws.com/cts-waypoint-server"
         tag        = "latest"
       }
     }
@@ -27,7 +29,7 @@ app "web" {
 
   deploy {
     use "aws-ecs" {
-      region = "eu-west-1"
+      region = "us-west-2"
       memory = 512
     }
   }
